@@ -1,6 +1,0 @@
-#PBS -l walltime=12:00:00
-#PBS -l select=1:ncpus=32:mem=62gb
-module load anaconda3/personal
-source activate SEG_DL
-cd $PBS_O_WORKDIR
-python ../../src/eval_of_ad_identification.py --seg_type ad --suffix ncb2 --model_dir /AD_base/base_AD_LR1.h5
